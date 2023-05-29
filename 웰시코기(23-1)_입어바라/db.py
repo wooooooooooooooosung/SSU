@@ -3,22 +3,30 @@ import os.path as path
 
 tableList = ['post', 'user' ]
 tableCreateQuery = {
-    'post' : '''CREATE TABLE IF NOT EXISTS post(
+    'post' : '''CREATE TABLE IF NOT EXISTS Post(
 	postID INTEGER PRIMARY KEY AUTOINCREMENT, 
 	postName TEXT,
+    postSubName TEXT, 
 	postDesc TEXT, 
 	postDate DATETIME,
+	postEndDate DATETIME, 
 	postCategory TEXT,
-	postStyle TEXT,
-	rentalDate DATETIME,
-	rentalPlace TEXT, 
 	postViewCount INTEGER,
-	postScore REAL, 
-	userID INTEGER)''' }
+	postScore INTEGER, 
+	postEnabled INTEGER, 
+    userID INTEGER)''',
+    'user' : '''CREATE TABLE IF NOT EXISTS User(
+    userID INTEGER PRIMARY KEY AUTOINCREMENT, 
+	userName TEXT,
+	userBirth DATETIME, 
+	userSex TEXT, 
+	userAddress Text)'''}
 tableImportQuery = {
-    'post' : '''INSERT INTO post(postID, postName, postDesc, postDate, postCategory, 
-	postStyle, rentalDate, rentalPlace, postViewCount, postScore, userID) 
-	VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'''}
+    'post' : '''INSERT INTO Post(postID, postName, postSubName, postDesc, postDate, postEndDate, 
+	postCategory, postViewCount, postScore, postEnabled, userID) 
+	VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
+    'user' : '''INSERT INTO User(userID, userName, userBirth, userSex, userAddress) 
+	VALUES(?, ?, ?, ?, ?)'''}
 
 con = None
 cur = None
@@ -34,30 +42,30 @@ def importData(cur, query, path):
         cur.execute(query, _.split("\t"))
 
 
-if __name__ == '__db__' :
-    print("asdasd")
-
-
 def init():
     global con, cur
 
-    flag = path.isfile('./db/입어바라4.db')
-    con = db.connect('./db/입어바라4.db')
+    flag = path.isfile('./db/입어바라.db')
+    con = db.connect('./db/입어바라.db')
     cur = con.cursor()
-    
+    #print(tableCreateQuery['post'])
     # DB 데이터 유무
     if flag == False :
-        cur.execute(tableCreateQuery['post'])
-        importData(cur, tableImportQuery['post'], './db/post.txt')
-        con.commit()
-        print("Asdasd")
+        for _ in tableList :
+            cur.execute(tableCreateQuery[str(_)])
+            importData(cur, tableImportQuery[str(_)], './db/' + str(_) + '.txt')
+            con.commit()
         
 
 
-def executeQuery(query):
+def executeQuery(query) :
     return cur.execute(query).fetchall()
     '''
     raw = cur.execute(query).fetchall()
     for _ in raw :
         print(_)
     '''
+
+def executeUpdate(query) :
+    cur.execute(query)
+    con.commit()
