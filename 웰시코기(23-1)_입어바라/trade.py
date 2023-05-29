@@ -37,6 +37,7 @@ class tradeWindow(QMainWindow, uic.loadUiType("./ui/trade.ui")[0]):
             self.trade.setStyleSheet("background-color: rgb(35, 35, 35); border-radius: 5px; color: white;")
         self.desc.clicked.connect(lambda : self.descBtn_click(list[1], list[2], list[3]))
         self.homeButton.clicked.connect(self.homeBtn_click)
+        self.trade.clicked.connect(lambda : self.tradeBtn_click(list[9], postID))
 
     def descBtn_click(self, title, subTitle, desc) :
         self.desc = descWindow(title, subTitle, desc)
@@ -44,3 +45,12 @@ class tradeWindow(QMainWindow, uic.loadUiType("./ui/trade.ui")[0]):
 
     def homeBtn_click(self):
         self.close()
+
+    def tradeBtn_click(self, enabled, postID) :
+        if enabled == 1 :
+            QMessageBox.critical(self, '오류', '이미 만료된 게시물입니다.')
+            return
+        else :
+            db.executeUpdate("UPDATE POST SET postEnabled = 1 WHERE postID = '" + str(postID) + "'")
+            QMessageBox.information(self, '성공', '대여 신청이 성공했습니다.')
+            self.close()
