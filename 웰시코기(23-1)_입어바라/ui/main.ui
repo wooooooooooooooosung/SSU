@@ -89,9 +89,9 @@
    <widget class="QLabel" name="hotPostImage">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>100</x>
       <y>40</y>
-      <width>500</width>
+      <width>300</width>
       <height>300</height>
      </rect>
     </property>
@@ -102,7 +102,7 @@
    <widget class="QPushButton" name="leftButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>30</x>
       <y>170</y>
       <width>41</width>
       <height>41</height>
@@ -128,7 +128,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>430</x>
       <y>170</y>
       <width>41</width>
       <height>41</height>
@@ -154,62 +154,11 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>460</y>
-      <width>501</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="img1">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>162</width>
-         <height>229</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="img2">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>162</width>
-         <height>229</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="img3">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>162</width>
-         <height>229</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QPushButton" name="op1">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>350</y>
+      <y>540</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -232,7 +181,7 @@
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>350</y>
+      <y>540</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -255,7 +204,7 @@
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>350</y>
+      <y>540</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -278,7 +227,7 @@
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>350</y>
+      <y>540</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -301,7 +250,7 @@
     <property name="geometry">
      <rect>
       <x>410</x>
-      <y>350</y>
+      <y>540</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -358,6 +307,195 @@
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>500</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(20, 20, 20);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>500</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>500</y>
+      <width>500</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>370</y>
+      <width>142</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>140</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="img2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>140</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>162</width>
+        <height>229</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>142</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>140</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="img1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>140</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>162</width>
+        <height>229</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_4">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>370</y>
+      <width>142</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>140</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="img3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>140</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>162</width>
+        <height>229</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>520</y>
+      <width>501</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <zorder>line</zorder>
+   <zorder>label</zorder>
    <zorder>frame_2</zorder>
    <zorder>pushButton</zorder>
    <zorder>userButton</zorder>
@@ -365,13 +503,17 @@
    <zorder>hotPostImage</zorder>
    <zorder>leftButton</zorder>
    <zorder>rightButton</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
    <zorder>op1</zorder>
    <zorder>op2</zorder>
    <zorder>op3</zorder>
    <zorder>op4</zorder>
    <zorder>op5</zorder>
    <zorder>frame</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>scrollArea_2</zorder>
+   <zorder>scrollArea_3</zorder>
+   <zorder>scrollArea_4</zorder>
   </widget>
  </widget>
  <resources/>

@@ -20,7 +20,7 @@ class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
         global postID1, postID2, postID3
 
         self.setupUi(self)
-        self.hotPostImage.setPixmap(QtGui.QPixmap('./img/ex' + str(selectHotPost) + '.jpg').scaledToWidth(500))
+        self.hotPostImage.setPixmap(QtGui.QPixmap('./img/ex' + str(selectHotPost) + '.jpg').scaled(300,300))
         self.leftButton.clicked.connect(lambda : self.arrowBtn_click(0))
         self.rightButton.clicked.connect(lambda : self.arrowBtn_click(1))
 
@@ -62,7 +62,7 @@ class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
         elif arrow == 1 :
             if selectHotPost == 3 : selectHotPost = 1
             else : selectHotPost = selectHotPost + 1
-        self.hotPostImage.setPixmap(QtGui.QPixmap('./img/ex' + str(selectHotPost) + '.jpg'))
+        self.hotPostImage.setPixmap(QtGui.QPixmap('./img/ex' + str(selectHotPost) + '.jpg').scaled(300,300))
 
     def writePostBtn_click(self):
         self.post = postWindow()
