@@ -1,6 +1,7 @@
 import db
 from user import userWindow
 from post import postWindow
+from board import boardWindow
 from trade import tradeWindow
 
 import sys
@@ -26,6 +27,7 @@ class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
 
         self.writePostButton.clicked.connect(self.writePostBtn_click)
         self.userButton.clicked.connect(self.userBtn_click)
+        self.pushButton.clicked.connect(self.boardBtn_click)
 
         self.op1.clicked.connect(lambda : self.optionBtn_click('상의'))
         self.op2.clicked.connect(lambda : self.optionBtn_click('하의'))
@@ -70,6 +72,10 @@ class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
     
     def userBtn_click(self) :
         self.user = userWindow()
+        self.user.show()
+    
+    def boardBtn_click(self) :
+        self.user = boardWindow()
         self.user.show()
 
     def optionBtn_click(self, option) :
