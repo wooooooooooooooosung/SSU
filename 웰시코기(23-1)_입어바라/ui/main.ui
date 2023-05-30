@@ -400,7 +400,7 @@
    <widget class="QScrollArea" name="scrollArea_3">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>370</y>
       <width>142</width>
       <height>142</height>
@@ -442,7 +442,7 @@
    <widget class="QScrollArea" name="scrollArea_4">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>340</x>
       <y>370</y>
       <width>142</width>
       <height>142</height>
