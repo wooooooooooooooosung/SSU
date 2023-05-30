@@ -64,6 +64,13 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+}</string>
+    </property>
     <property name="text">
      <string/>
     </property>

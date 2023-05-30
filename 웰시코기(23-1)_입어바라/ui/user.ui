@@ -162,12 +162,12 @@ border: 1px solid;</string>
     </property>
     <property name="dateTime">
      <datetime>
-      <hour>6</hour>
+      <hour>21</hour>
       <minute>0</minute>
       <second>0</second>
       <year>2021</year>
       <month>12</month>
-      <day>29</day>
+      <day>28</day>
      </datetime>
     </property>
     <property name="calendarPopup">
@@ -280,6 +280,13 @@ font: 87 9pt &quot;Arial Black&quot;;</string>
       <width>41</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+}</string>
     </property>
     <property name="text">
      <string/>
