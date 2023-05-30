@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QUrl
 from PyQt5 import *
 
-selectHotPost = 4
+selectHotPost = 2
 postID1 = 0
 postID2 = 0
 postID3 = 0
