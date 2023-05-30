@@ -4,10 +4,8 @@ from desc import descWindow
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QDate
-from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtCore import QUrl
 from PyQt5 import *
-
 
 class tradeWindow(QMainWindow, uic.loadUiType("./ui/trade.ui")[0]):
     def __init__(self, postID):

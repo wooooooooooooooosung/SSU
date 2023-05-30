@@ -6,7 +6,6 @@ from trade import tradeWindow
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
-from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtCore import QUrl
 from PyQt5 import *
 
@@ -16,8 +15,6 @@ postID2 = 0
 postID3 = 0
 
 class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
-
-    
     def __init__(self):
         super().__init__()
         global postID1, postID2, postID3
@@ -48,10 +45,6 @@ class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
         self.img2.clicked.connect(lambda : self.imgBtn_click(2))
         self.img3.clicked.connect(lambda : self.imgBtn_click(3))
 
-        #self.webEngineView = QWebEngineView()
-        #self.gridLayout.addWidget(self.webEngineView)  # row, column, row_span, column_span
-        #self.webEngineView.load(QUrl("https://naver.me/FOvSy6I3"))
-
     def imgBtn_click(self, n) :
         global postID1, postID2, postID3
         postID = None
@@ -60,7 +53,6 @@ class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
         elif n == 3 : postID = postID3
         self.trade = tradeWindow(postID)
         self.trade.show()
-
 
     def arrowBtn_click(self, arrow):
         global selectHotPost
@@ -90,7 +82,6 @@ class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
         postID2 = list[1][0]
         postID3 = list[2][0]
     
-
 '''
 # 프로그램 시작점
 작성 : 2023-05-22

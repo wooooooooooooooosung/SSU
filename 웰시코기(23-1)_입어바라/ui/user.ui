@@ -13,22 +13,14 @@
   <property name="windowTitle">
    <string>입어바라</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="gridLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>-200</x>
-      <y>220</y>
-      <width>701</width>
-      <height>301</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout"/>
-   </widget>
    <widget class="QLabel" name="label_levels">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>40</x>
       <y>60</y>
       <width>51</width>
       <height>16</height>
@@ -53,7 +45,7 @@ font: 87 9pt &quot;Arial Black&quot;;</string>
      <rect>
       <x>100</x>
       <y>60</y>
-      <width>231</width>
+      <width>381</width>
       <height>21</height>
      </rect>
     </property>
@@ -97,8 +89,8 @@ color: rgb(0, 0, 0);</string>
    <widget class="QLabel" name="label_levels_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>100</y>
+      <x>310</x>
+      <y>120</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -120,9 +112,9 @@ font: 87 9pt &quot;Arial Black&quot;;</string>
    <widget class="QLineEdit" name="sex">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>100</y>
-      <width>231</width>
+      <x>370</x>
+      <y>120</y>
+      <width>111</width>
       <height>21</height>
      </rect>
     </property>
@@ -154,8 +146,8 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>140</y>
-      <width>231</width>
+      <y>120</y>
+      <width>171</width>
       <height>22</height>
      </rect>
     </property>
@@ -170,12 +162,12 @@ border: 1px solid;</string>
     </property>
     <property name="dateTime">
      <datetime>
-      <hour>0</hour>
+      <hour>6</hour>
       <minute>0</minute>
       <second>0</second>
       <year>2021</year>
       <month>12</month>
-      <day>30</day>
+      <day>29</day>
      </datetime>
     </property>
     <property name="calendarPopup">
@@ -189,7 +181,7 @@ border: 1px solid;</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>140</y>
+      <y>120</y>
       <width>61</width>
       <height>16</height>
      </rect>
@@ -212,7 +204,7 @@ font: 87 9pt &quot;Arial Black&quot;;</string>
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>180</y>
+      <y>90</y>
       <width>381</width>
       <height>21</height>
      </rect>
@@ -241,8 +233,8 @@ color: rgb(0, 0, 0);</string>
    <widget class="QLabel" name="label_levels_4">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>180</y>
+      <x>40</x>
+      <y>90</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -301,6 +293,157 @@ font: 87 9pt &quot;Arial Black&quot;;</string>
       <width>25</width>
       <height>25</height>
      </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uploadFileButton">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>150</y>
+      <width>461</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>My 대여 목록 보기</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>138</width>
+       <height>138</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>220</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>138</width>
+       <height>138</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>220</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>138</width>
+       <height>138</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>461</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>459</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_levels_5">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 87 9pt &quot;Arial Black&quot;;</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>추천 대여 의상</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>461</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
   </widget>
