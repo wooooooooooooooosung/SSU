@@ -14,6 +14,7 @@ selectHotPost = 2
 postID1 = 0
 postID2 = 0
 postID3 = 0
+tmp = 1
 
 class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
     def __init__(self):
