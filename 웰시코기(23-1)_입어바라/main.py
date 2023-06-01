@@ -5,16 +5,28 @@ from board import boardWindow
 from trade import tradeWindow
 
 import sys
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 from PyQt5 import uic
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import QUrl
 from PyQt5 import *
 
+HOST, PORT = '127.0.0.1', 7335
 selectHotPost = 2
 postID1 = 0
 postID2 = 0
 postID3 = 0
-tmp = 1
+
+class HttpDaemon(QtCore.QThread):
+    def run(self):
+        global HOST, PORT
+        self._server = HTTPServer(('localhost', PORT), SimpleHTTPRequestHandler)
+        self._server.serve_forever()
+
+    def stop(self):
+        self._server.shutdown()
+        self._server.socket.close()
+        self.wait()
 
 class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
     def __init__(self):
@@ -47,6 +59,9 @@ class WindowClass(QMainWindow, uic.loadUiType("./ui/main.ui")[0]):
         self.img1.clicked.connect(lambda : self.imgBtn_click(1))
         self.img2.clicked.connect(lambda : self.imgBtn_click(2))
         self.img3.clicked.connect(lambda : self.imgBtn_click(3))
+
+        self.httpd = HttpDaemon(self)
+        self.httpd.start()
 
     def imgBtn_click(self, n) :
         global postID1, postID2, postID3
