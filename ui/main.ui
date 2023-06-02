@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>입어바라</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>645</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/list.png</normaloff>icon/list.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="userButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>645</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/user.png</normaloff>icon/user.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="writePostButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>645</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(255, 255, 255);
+	border-radius: 3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/more.png</normaloff>icon/more.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hotPostImage">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>300</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="leftButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/left.png</normaloff>icon/left.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>29</width>
+      <height>29</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>170</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>icon/right.png</normaloff>icon/right.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>27</width>
+      <height>27</height>
+     </size>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="op1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>상의</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="op2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>540</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>하의</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="op3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>540</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>모자</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="op4">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>540</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>신발</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="op5">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>540</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>기타</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>500</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>630</y>
+      <width>500</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>500</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(20, 20, 20);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>500</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>500</y>
+      <width>500</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>370</y>
+      <width>142</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>140</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="img2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>140</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>162</width>
+        <height>229</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>142</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>140</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="img1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>140</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>162</width>
+        <height>229</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_4">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>370</y>
+      <width>142</width>
+      <height>142</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>140</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="img3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>140</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>162</width>
+        <height>229</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>520</y>
+      <width>501</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <zorder>line</zorder>
+   <zorder>label</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>userButton</zorder>
+   <zorder>writePostButton</zorder>
+   <zorder>hotPostImage</zorder>
+   <zorder>leftButton</zorder>
+   <zorder>rightButton</zorder>
+   <zorder>op1</zorder>
+   <zorder>op2</zorder>
+   <zorder>op3</zorder>
+   <zorder>op4</zorder>
+   <zorder>op5</zorder>
+   <zorder>frame</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>scrollArea_2</zorder>
+   <zorder>scrollArea_3</zorder>
+   <zorder>scrollArea_4</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

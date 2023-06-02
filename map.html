@@ -1,0 +1,13 @@
+<div id='map' style='width:475px;height:245px;display:inline-block;'></div>
+<script type='text/javascript' src='//dapi.kakao.com/v2/maps/sdk.js?appkey=24c90bc08df574c851cbff398327ac87'></script>
+<script>
+    var container = document.getElementById('map'); 
+    var options = {
+           center: new kakao.maps.LatLng(37.646668707628, 126.928443600221),
+           level: 3
+    }; 
+    var map = new kakao.maps.Map(container, options); 
+    var markerPosition  = new kakao.maps.LatLng(37.646668707628, 126.928443600221);  
+    var marker = new kakao.maps.Marker({position: markerPosition}); 
+    marker.setMap(map); 
+</script>
