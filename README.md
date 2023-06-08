@@ -1,5 +1,5 @@
-# SSU
-숭실대학교 과제(Soongsil University)
+# ssu-ctcf-23-1
+숭실대학교(Soongsil University) 컴사코기(23-1) 입어바라
 
 install module
 ```py
